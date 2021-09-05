@@ -1,0 +1,225 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS variables */
+:root{
+    --navbar-height: 50px;
+}
+/* Navigation Bar */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    opacity: 45%;
+    z-index: -1;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: relative;
+}
+/* Navigation Bar: logo and image */
+#logo{
+    margin: 4px 4px;
+    padding: 0px 0px;
+}
+#logo img{
+    margin: 0px 4px;
+    height: 2.5em;
+    align-items: center;
+    justify-content: center;
+}
+/* Navigation Bar List Styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    /* color: red; */
+    list-style:none;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar ul li a{
+    display: block;
+    margin: 5px 25px;
+    padding: 5px 5px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+#navbar ul li a:hover{
+    display: block;
+    padding: 5px 5px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 100px;
+    /* margin: 10px 0px; */
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 470px;
+}
+#home::before{
+    top: 0px;
+    content: "";
+    position: absolute;
+    height: 85% ;
+    width: 100%;
+    z-index: -2;
+    background: url('./img/bg3.jpg') no-repeat center center/cover;
+    opacity: .85;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services Section */
+#services{
+    margin: 35px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    width: 30%;
+    margin: 5px 14px;
+    padding: 15px 10px;
+    border-radius: 20px;
+    background-color: rgb(243, 231, 231);
+}
+#services .box img{
+    height: 150px;
+}
+#services .box p{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Client Section */
+
+#clients{
+    display: flex;
+}
+
+.clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-item{
+    margin: 15px 50px;
+}
+#client::before{
+    background: url('./img/bg1.jpg');
+    content: "";
+    position: absolute;
+    height: 300px ;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;  
+}
+#contact::before{
+    content: "";
+    background: url('./img/contact\ us\ 3.png') no-repeat center center/cover;
+    position: absolute;
+    height: 100% ;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+    margin: 4px 0px 0px 0px;
+    /* margin: auto; */
+}
+
+#contactbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bree Serif', serif;
+
+}
+#contactbox input, 
+#contactbox textarea{
+    padding: 0.3rem;
+    width: 100%;
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 10px;
+}
+#contactbox textarea{
+    margin-bottom: 9px;
+}
+#contactbox form{
+    width: 40%;
+
+}
+
+#contactbox label{
+    font-size: 1.2rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+/* Utility Classes */
+.headingprimary{
+    font-size: 4rem;
+    padding: 13px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 3rem;
+    padding: 13px;
+    font-family: 'Bree Serif',serif;
+}
+.btn{
+    padding: 5px 14px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 10px 10px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    transition: all 200ms ease-in;
+    text-decoration: none;
+}
+/* .btn a{
+    text-decoration: none;
+    color: white;
+} */
+.btn:hover{
+    background-color: white;
+    color: brown;
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
+.center{
+    text-align: center;
+}
