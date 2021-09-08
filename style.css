@@ -235,10 +235,8 @@ footer{
     background-color: white;
     color: grey;
     cursor: pointer;
-    transform: scale(1.1);
-    
+    transform: scale(1.1);   
 }
-
 .center{
     text-align: center;
 }
