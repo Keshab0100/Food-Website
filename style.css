@@ -220,6 +220,25 @@ footer{
     transform: scale(1.1);
     
 }
+.btm{
+    padding: 5px 14px;
+    border: 2px solid white;
+    background-color: grey;
+    color: white;
+    margin: 10px 10px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    transition: all 200ms ease-in;
+    text-decoration: none;
+}
+.btm:hover{
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
+
 .center{
     text-align: center;
 }
